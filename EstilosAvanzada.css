@@ -1,0 +1,373 @@
+
+@font-face{
+    font-family: "icono";
+    src: url("Recursos/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
+         url("Recursos/fonts/websymbols-regular-webfont.eot");    
+    src: url("Recursos/fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("Recursos/fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("Recursos/fonts/websymbols-regular-webfont.ttf") format("truetype"),
+        url("Recursos/fonts/websymbols-regular-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;    
+}
+
+@font-face{
+    font-family: "TrebuchetMS";
+    src: url("Recursos/fonts/TrebuchetMS.ttf");
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face{
+    font-family: "BebasNeue";
+    src: url("Recursos/fonts/BebasNeue.otf.ttf");
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/* Todo */
+
+*{
+    margin: 0px;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0px auto;
+}
+
+body{
+    background-image: url("Recursos/img/pattern.png");
+}
+
+/*Cabezera*/
+
+#logo:hover{
+    border-radius: 3px;
+    background-color: black;
+}
+
+.gear{
+    display: block;
+    font-family: icono, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+    float: left;    
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 30px;
+    animation-name: rotate-gear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes fromBelow{
+    0%{
+        transform: translateY(0%);
+
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+#logo:hover .gear{
+    animation-name: fromBelow;
+    animation-timing-function: linear;
+}
+
+
+
+#logo{
+    background-color: rgb(127, 214, 216);
+    color: white;
+    float: left;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    width: 135px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;  
+    margin-top: 10px; 
+    margin-left: 1px; 
+    height: 50px;
+    border: 2px solid blue;
+}
+
+#logo h3{
+    display: block;
+    font-size: 30px;
+    float: right;
+    margin-top: 5px;
+    transition: all 500ms;
+    margin-right: 18px;
+    
+    
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-family: "BebasNeue";
+}
+
+/* Navegacion */
+
+#lista{
+    display: block;
+    text-align: center;
+    float: right;
+    margin-right: -20px;
+}
+
+#navLista ul li{
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    float: left;
+    color: white;
+    margin-left: 20px;
+    padding-right: 30px;
+    line-height: 70px;
+    border-right: 1px solid gray;
+}
+
+#navLista ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+#navLista ul li a:hover{
+    color: cornflowerblue;
+    transform: scale(1.2,1.2);
+    font-size: 20px;
+}
+
+/*Banner*/
+
+
+#titulo{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    background-image: url("Recursos/img/bakbaner.png");
+    background-position: -150px -155px;
+    line-height: 50px;
+    margin: 20px auto;
+}
+
+#titulo h1{
+    display: block;
+    width: 850px;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 27px auto;
+    color: white;
+}
+
+/*Temario*/
+
+.symbol{
+    display: block;
+    font-family: icono, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;   
+    padding-bottom: 30px; 
+    color: black;
+}
+
+#temario section{
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px gray;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 30px;
+    margin: 15px;
+    color: blue;
+    background-color: white;
+}
+
+#temario section h4{
+    padding-bottom: 20px;
+}
+
+/* Articulos */
+
+#noticias{
+    margin-top: 50px;
+    width: 70%;
+}
+
+#noticias h2:first-child{    
+    width: 100%;
+    height: 50px;
+    background-color: rgb(194, 193, 193);
+    box-shadow: 2px 3px 10px black;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 5px;   
+}
+
+#noticias section{
+    margin-top: 25px;
+    border: 1px solid rgb(185, 184, 184);
+    padding: 10px;
+    
+}
+
+#noticias section h3{
+    display: block;
+    color: rgb(30, 30, 131);
+    margin-bottom: 15px;
+    float: left;
+}
+
+#noticias section p a{
+    color: rgb(18, 18, 148);
+}
+
+.fecha{
+    display: block;
+    float: right;
+}
+
+.fecha pre{
+    display: block;    
+    width: 275px;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+    color: yellow;
+    background-color: black;
+    background: linear-gradient( to left top, black, gray);
+    margin:  -9px -9px 0px 0px;
+}
+
+/* Ir al blog */
+
+#noticias h2:last-child{
+    width: 99%;
+    height: 50px;
+    border: 1px solid rgb(187, 184, 184);    
+    text-transform: uppercase ;
+    padding: 4px;
+    text-align: center;
+    margin: 50px 0px 15px 0px;
+    line-height: 50px;
+}
+
+#noticias h2:last-child a{ 
+    color: rgb(45, 45, 189);
+    text-decoration: none;
+}
+
+
+/*Barra lateral*/
+
+
+
+/*Pie de página*/
+
+footer{
+    
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    color: white;
+    
+}
+
+
+#navMenu h5{
+    background-color: rgb(154, 165, 167);
+    color: black;
+    text-transform: uppercase;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#Menu ul li{
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    width: 20%;
+    margin: 15px 0px 0px 50px;
+}
+
+#Menu ul li:first-child{
+
+    border-bottom: 0px solid gray;
+
+}
+
+#navMenu div{
+    float: left;
+    margin: 5px;
+    width: 350px;
+}
+
+#Menu ul li a{
+    color: rgb(110, 110, 202);
+    text-decoration: none;
+}
+
+#location iframe{
+    width: 300px;
+    height: 300px;
+    margin: 15px 15px 15px 0px;
+}
+
+
+#info p img{
+    margin: 25px 0px 25px 25px;
+}
+
+#info p:last-child a{
+    font-size: 30px;
+    text-align: center;
+    color: green;
+    
+}
+
+#info p:last-child{
+ 
+    text-align: center;
+
+    
+}
+

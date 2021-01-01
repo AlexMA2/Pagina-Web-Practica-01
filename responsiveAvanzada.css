@@ -1,0 +1,48 @@
+@media (max-width: 1250px){
+    .wrap{
+        width: 90%;
+        margin: 0px auto;
+        
+    }
+
+    #titulo{
+        width: 85%;
+        margin: 0px auto;
+    }
+
+    #titulo h1{
+        width: 80%;
+        font-size: 30px;
+        letter-spacing: 1px;
+
+    }
+
+    #temario section{
+        width: 25%;
+    }
+
+}
+
+/* IPad Pro */
+
+@media(max-width: 1024px){
+    #navMenu div{
+        float: left;
+        margin: 6px;
+        width: 32%;
+    }
+
+    #temario{
+        margin-left: 47px;
+    }
+
+    #temario section{
+        width: 241px;
+    }
+
+}
+
+@media{
+    
+}
+
